@@ -16,7 +16,7 @@
   <section class="container">
     <div class="login">
       <h1>Login to Web App</h1>
-      <form method="post" action="index.html">
+      <form id="form_id" method="post" name="myform">
         <p><input type="text" name="username" id="username" value="" placeholder="Username or Email"></p>
         <p><input type="password" name="password" id="password" value="" placeholder="Password"></p>
         <p class="remember_me">
@@ -25,7 +25,7 @@
             Remember me on this computer
           </label>
         </p>
-        <p class="submit"><input type="submit" name="commit" value="Login" onclick="validate()"/></p>
+        <p class="submit"><input type="submit" id="submit" name="commit" value="Login" onclick="return validate()"/></p>
       </form>
     </div>
     <div class="login-help">
